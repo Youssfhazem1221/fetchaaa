@@ -1,6 +1,6 @@
 {
   "name": "fetch",
   "description": "",
-  "requestFramePermissions": ["http://localhost:3000"],
+  "requestFramePermissions": ["http://localhost:3001"],
   "majorCapabilities": []
 }
