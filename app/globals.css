@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-bg-primary: #070907;
+  --color-bg-secondary: #11130F;
+  --color-surface: #171A14;
+  --color-surface-strong: #20251B;
+  --color-ink: #F7F1E3;
+  --color-paper: #E9E1CF;
+  --color-accent-primary: #B7FF2A;
+  --color-accent-secondary: #F0B84A;
+  --color-accent-tertiary: #66D9E8;
+  --color-alert: #FF6B4A;
+  --color-text-primary: #F7F1E3;
+  --color-text-muted: #A9A390;
+  --color-glass-border: rgba(255, 255, 255, 0.06);
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@utility glass {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(16px);
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, rgba(183, 255, 42, 0.05), transparent 34%),
+    linear-gradient(180deg, rgba(7, 9, 7, 0.2), rgba(7, 9, 7, 0.92)),
+    repeating-linear-gradient(90deg, rgba(247, 241, 227, 0.035) 0 1px, transparent 1px 78px),
+    repeating-linear-gradient(0deg, rgba(247, 241, 227, 0.026) 0 1px, transparent 1px 78px);
+}
+
+html {
+  background: var(--color-bg-primary);
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--color-accent-primary);
+  color: var(--color-bg-primary);
+}

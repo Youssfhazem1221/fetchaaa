@@ -1,0 +1,334 @@
+ ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ⨯ ./components/LiveDashboard.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\LiveDashboard.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/LiveDashboard.tsx
+./components/Hero.tsx
+ ⨯ ./components/Hero.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\Hero.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/Hero.tsx
+./app/page.tsx
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\hiberfil.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\hiberfil.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\hiberfil.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\DumpStack.log.tmp'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\hiberfil.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\pagefile.sys'
+Watchpack Error (initial scan): Error: EINVAL: invalid argument, lstat 'C:\swapfile.sys'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\youss\Desktop\fetch\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\youss\Desktop\fetch\.next\cache\webpack\client-development-fallback\0.pack.gz'
+ ⨯ ./components/ServicesSection.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\ServicesSection.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/ServicesSection.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/LivePerformance.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\LivePerformance.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/LivePerformance.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/ProcessSection.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\ProcessSection.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/ProcessSection.tsx
+./app/page.tsx
+ ⨯ ./components/BentoGrid.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\BentoGrid.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/BentoGrid.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/CaseStudies.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\CaseStudies.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/CaseStudies.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/AboutUs.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\AboutUs.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/AboutUs.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/FAQ.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\FAQ.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/FAQ.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/FAQ.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\FAQ.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/FAQ.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/FAQ.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\FAQ.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/FAQ.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/FAQ.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\FAQ.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/FAQ.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/FAQ.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\FAQ.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/FAQ.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ./components/ContactForm.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\ContactForm.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/ContactForm.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ ./components/Footer.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\youss\Desktop\fetch\components\Footer.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./components/Footer.tsx
+./app/page.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\youss\Desktop\fetch\.next\server\vendor-chunks\lucide-react.js'
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:522:47)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:525:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\youss\\Desktop\\fetch\\.next\\server\\vendor-chunks\\lucide-react.js',
+  page: '/'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\youss\Desktop\fetch\.next\server\vendor-chunks\lucide-react.js'
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:522:47)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:525:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\youss\\Desktop\\fetch\\.next\\server\\vendor-chunks\\lucide-react.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\youss\Desktop\fetch\.next\server\webpack-runtime.js
+- C:\Users\youss\Desktop\fetch\.next\server\app\page.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\require.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\load-components.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\utils.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\options.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\index.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\next.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:376)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:422) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\youss\Desktop\fetch\.next\server\webpack-runtime.js
+- C:\Users\youss\Desktop\fetch\.next\server\app\page.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\require.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\load-components.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\utils.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\options.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\index.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\next.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:376)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:422) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\youss\Desktop\fetch\.next\server\vendor-chunks\lucide-react.js'
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:522:47)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:525:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\youss\\Desktop\\fetch\\.next\\server\\vendor-chunks\\lucide-react.js',
+  page: '/'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\youss\Desktop\fetch\.next\server\vendor-chunks\lucide-react.js'
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:522:47)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\app\page.js:525:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\youss\\Desktop\\fetch\\.next\\server\\vendor-chunks\\lucide-react.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\youss\Desktop\fetch\.next\server\webpack-runtime.js
+- C:\Users\youss\Desktop\fetch\.next\server\app\page.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\require.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\load-components.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\utils.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\options.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\index.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\next.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:376)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:422) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\youss\Desktop\fetch\.next\server\webpack-runtime.js
+- C:\Users\youss\Desktop\fetch\.next\server\app\page.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\require.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\load-components.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\utils.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\options.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\swc\index.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\config.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\next.js
+- C:\Users\youss\Desktop\fetch\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:376)
+    at Object.<anonymous> (C:\Users\youss\Desktop\fetch\.next\server\pages\_document.js:1:422) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
