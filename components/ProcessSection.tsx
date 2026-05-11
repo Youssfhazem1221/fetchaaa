@@ -50,7 +50,7 @@ export default function ProcessSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.55, delay: index * 0.08 }}
-              className="relative border-b border-white/10 py-8 lg:border-b-0 lg:border-r lg:px-6"
+              className="relative flex h-full flex-col border-b border-white/10 py-8 lg:border-b-0 lg:border-r lg:px-6"
             >
               <div className="mb-8 flex items-center justify-between">
                 <span className="font-mono text-sm text-text-muted">0{index + 1}</span>
@@ -60,7 +60,8 @@ export default function ProcessSection() {
               </div>
               <h3 className="text-2xl font-bold text-ink">{step.title}</h3>
               <p className="mt-4 text-base leading-7 text-text-muted">{step.desc}</p>
-              <div className="mt-8 h-2 w-full rounded-[2px] bg-white/10">
+              <div className="mt-auto pt-8">
+                <div className="h-2 w-full rounded-[2px] bg-white/10">
                 <motion.div
                   className="h-full rounded-[2px] bg-accent-primary"
                   initial={{ width: 0 }}
@@ -68,6 +69,7 @@ export default function ProcessSection() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.9, delay: 0.2 + index * 0.08, ease: 'easeOut' }}
                 />
+                </div>
               </div>
             </motion.article>
           ))}
