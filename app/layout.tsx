@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { IBM_Plex_Mono, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import WhatsAppFloatingCTA from '@/components/WhatsAppFloatingCTA';
 
 const sans = Space_Grotesk({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 w-full">
           {children}
         </main>
+        <WhatsAppFloatingCTA />
       </body>
     </html>
   );
