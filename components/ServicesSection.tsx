@@ -1,35 +1,24 @@
 'use client';
 import { motion } from 'motion/react';
 import { ArrowRight, Bot, CalendarCheck, Network, Radar, ShieldCheck, Workflow } from 'lucide-react';
+import { useLanguage } from '@/lib/LanguageContext';
 
-const services = [
-  {
-    title: 'Lead response engine',
-    description: 'Capture every inquiry, classify intent, answer instantly, and push only qualified opportunities to the right human.',
-    icon: Radar,
-    details: ['WhatsApp, email, forms', 'Intent scoring', 'Spam filtering'],
-  },
-  {
-    title: 'Qualification and booking',
-    description: 'Run the same qualification logic your best rep would use, then book directly into your calendar and CRM.',
-    icon: CalendarCheck,
-    details: ['Calendar routing', 'No-show reminders', 'Buyer fit checks'],
-  },
-  {
-    title: 'Operations automation sprint',
-    description: 'Connect messy internal tools into one reliable workflow with clear alerts, logs, and human override points.',
-    icon: Workflow,
-    details: ['CRM sync', 'Webhook logic', 'Team handoffs'],
-  },
-];
-
-const capabilities = [
-  { icon: Bot, label: 'Custom agent logic' },
-  { icon: Network, label: 'Tool integrations' },
-  { icon: ShieldCheck, label: 'Guardrails and review' },
-];
+const serviceIcons = [Radar, CalendarCheck, Workflow];
+const capabilityIcons = [Bot, Network, ShieldCheck];
 
 export default function ServicesSection() {
+  const { language, t } = useLanguage();
+
+  const services = t.services.items.map((item, index) => ({
+    ...item,
+    icon: serviceIcons[index],
+  }));
+
+  const capabilities = t.services.capabilities.map((label, index) => ({
+    label,
+    icon: capabilityIcons[index],
+  }));
+
   return (
     <section id="services" className="w-full bg-bg-primary px-5 py-24 md:px-8 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
@@ -40,9 +29,9 @@ export default function ServicesSection() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
           >
-            <div className="mb-4 font-mono text-xs text-accent-primary">What we build</div>
+            <div className="mb-4 font-mono text-xs text-accent-primary">{t.services.badge}</div>
             <h2 className="text-4xl font-bold leading-[1.05] text-ink md:text-6xl">
-              Revenue workflows with operator discipline.
+              {t.services.title}
             </h2>
           </motion.div>
 
@@ -51,9 +40,9 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="max-w-2xl text-lg leading-8 text-text-muted lg:ml-auto"
+            className="max-w-2xl text-lg leading-8 text-text-muted lg:ms-auto"
           >
-            Fetch designs the hidden systems between your ads, inboxes, CRM, calendar, and team. The output is not a chatbot demo; it is a working operating layer with logging, escalation, and measurable revenue impact.
+            {t.services.description}
           </motion.p>
         </div>
 
@@ -87,8 +76,8 @@ export default function ServicesSection() {
               </div>
 
               <a href="#contact" className="mt-8 inline-flex items-center gap-2 font-bold text-ink transition-colors hover:text-accent-primary">
-                Scope this system
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                {t.services.cta}
+                <ArrowRight className={`h-4 w-4 transition-transform group-hover:translate-x-1 ${language === 'ar' ? 'rotate-180 group-hover:-translate-x-1' : ''}`} />
               </a>
             </motion.article>
           ))}
@@ -106,3 +95,4 @@ export default function ServicesSection() {
     </section>
   );
 }
+

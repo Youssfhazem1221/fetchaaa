@@ -2,16 +2,10 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
-
-const navItems = [
-  { label: 'Services', href: '#services' },
-  { label: 'Process', href: '#process' },
-  { label: 'Use cases', href: '#use-cases' },
-  { label: 'Proof', href: '#proof' },
-  { label: 'FAQ', href: '#faq' },
-];
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function Navbar() {
+  const { language, toggleLanguage, t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,6 +15,14 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const navItems = [
+    { label: t.navbar.services, href: '#services' },
+    { label: t.navbar.process, href: '#process' },
+    { label: t.navbar.useCases, href: '#use-cases' },
+    { label: t.navbar.proof, href: '#proof' },
+    { label: t.navbar.faq, href: '#faq' },
+  ];
 
   return (
     <header
@@ -36,8 +38,8 @@ export default function Navbar() {
             className="h-3 w-3 rounded-sm bg-accent-primary shadow-[0_0_20px_rgba(183,255,42,0.45)]"
           />
           <span className="text-lg font-bold text-text-primary">FETCH</span>
-          <span className="hidden border-l border-white/15 pl-3 font-mono text-[11px] text-text-muted sm:inline">
-            AI operations systems
+          <span className="hidden border-s border-white/15 ps-3 font-mono text-[11px] text-text-muted sm:inline">
+            {language === 'en' ? 'AI operations systems' : 'أنظمة تشغيل العمليات بالذكاء الاصطناعي'}
           </span>
         </a>
 
@@ -50,15 +52,24 @@ export default function Navbar() {
             ))}
           </nav>
 
+          <button
+            onClick={toggleLanguage}
+            className="h-10 px-3 flex items-center justify-center rounded-md border border-white/10 bg-white/5 font-mono text-xs font-bold text-text-primary transition-all hover:border-accent-primary hover:text-accent-primary cursor-pointer"
+            aria-label="Toggle language / تغيير اللغة"
+          >
+            {language === 'en' ? 'عربي' : 'EN'}
+          </button>
+
           <a
             href="#contact"
             className="hidden h-10 shrink-0 items-center gap-2 rounded-md border border-accent-primary bg-accent-primary px-4 text-sm font-bold text-bg-primary transition-all hover:bg-paper hover:text-bg-primary sm:inline-flex"
           >
-            Audit
-            <ArrowUpRight className="h-4 w-4" />
+            {t.navbar.audit}
+            <ArrowUpRight className={`h-4 w-4 transition-transform duration-200 ${language === 'ar' ? 'rotate-[-90deg]' : ''}`} />
           </a>
         </div>
       </div>
     </header>
   );
 }
+

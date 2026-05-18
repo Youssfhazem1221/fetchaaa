@@ -1,11 +1,11 @@
 'use client';
 import { motion } from 'motion/react';
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function WhatsAppFloatingCTA() {
+  const { language, t } = useLanguage();
   const phoneNumber = '201069237525';
-  const prefilledMessage = encodeURIComponent(
-    "Hi Fetch team, I'd like to discuss an AI operations system buildout for my business."
-  );
+  const prefilledMessage = encodeURIComponent(t.cta.message);
   const waUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${prefilledMessage}`;
 
   return (
@@ -13,7 +13,7 @@ export default function WhatsAppFloatingCTA() {
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
-      className="fixed bottom-5 right-5 z-[9999] md:bottom-8 md:right-8"
+      className="fixed bottom-5 end-5 z-[9999] md:bottom-8 md:end-8"
     >
       <motion.a
         href={waUrl}
@@ -21,7 +21,7 @@ export default function WhatsAppFloatingCTA() {
         rel="noopener noreferrer"
         whileHover={{ y: -2 }}
         whileTap={{ scale: 0.98 }}
-        className="group flex min-h-[52px] items-center gap-3.5 rounded-md border border-white/10 bg-bg-primary/95 p-2 pr-5 backdrop-blur-xl shadow-[0_24px_80px_rgba(7,9,7,0.85)] transition-all duration-200 hover:border-accent-primary"
+        className="group flex min-h-[52px] items-center gap-3.5 rounded-md border border-white/10 bg-bg-primary/95 p-2 pe-5 backdrop-blur-xl shadow-[0_24px_80px_rgba(7,9,7,0.85)] transition-all duration-200 hover:border-accent-primary"
         aria-label="Start WhatsApp Live Chat"
       >
         {/* Custom Icon badge strictly mirroring Fetch's native square-rounded geometry */}
@@ -39,11 +39,11 @@ export default function WhatsAppFloatingCTA() {
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent-primary" />
             </span>
             <span className="font-mono text-[10px] font-semibold text-accent-primary">
-              intake expert
+              {t.cta.badge}
             </span>
           </div>
           <span className="text-xs font-bold text-ink transition-colors group-hover:text-accent-primary">
-            Chat on WhatsApp
+            {t.cta.label}
           </span>
         </div>
       </motion.a>

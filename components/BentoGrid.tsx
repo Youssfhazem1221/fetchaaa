@@ -1,35 +1,19 @@
 'use client';
 import { motion } from 'motion/react';
 import { Building2, CalendarCheck, ShoppingCart } from 'lucide-react';
+import { useLanguage } from '@/lib/LanguageContext';
 
-const cases = [
-  {
-    id: '01',
-    industry: 'Real estate',
-    title: 'Respond before the next agent does.',
-    metric: '3x faster response',
-    lines: ['Facebook lead arrives', 'AI qualifies budget and timeline', 'Calendar slot offered instantly'],
-    icon: Building2,
-  },
-  {
-    id: '02',
-    industry: 'Clinics',
-    title: 'Turn inquiries into confirmed appointments.',
-    metric: 'fewer empty slots',
-    lines: ['Patient asks on WhatsApp', 'Symptoms and availability checked', 'Reminder flow prevents no-shows'],
-    icon: CalendarCheck,
-  },
-  {
-    id: '03',
-    industry: 'E-commerce',
-    title: 'Recover revenue from support gaps.',
-    metric: 'more recovered carts',
-    lines: ['Customer stalls at checkout', 'Order issue detected', 'Human escalation only when needed'],
-    icon: ShoppingCart,
-  },
-];
+const caseIcons = [Building2, CalendarCheck, ShoppingCart];
 
 export default function BentoGrid() {
+  const { language, t } = useLanguage();
+
+  const cases = t.bentoGrid.cases.map((item, index) => ({
+    ...item,
+    id: `0${index + 1}`,
+    icon: caseIcons[index],
+  }));
+
   return (
     <section id="use-cases" className="w-full border-y border-white/10 bg-surface px-5 py-24 md:px-8 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
@@ -40,9 +24,9 @@ export default function BentoGrid() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
           >
-            <div className="mb-4 font-mono text-xs text-accent-primary">Use cases</div>
+            <div className="mb-4 font-mono text-xs text-accent-primary">{t.bentoGrid.badge}</div>
             <h2 className="text-4xl font-bold leading-[1.05] text-ink md:text-6xl">
-              The workflows that usually pay first.
+              {t.bentoGrid.title}
             </h2>
           </motion.div>
 
@@ -51,9 +35,9 @@ export default function BentoGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="max-w-2xl text-lg leading-8 text-text-muted lg:ml-auto"
+            className="max-w-2xl text-lg leading-8 text-text-muted lg:ms-auto"
           >
-            We start where response speed and routing accuracy create visible money. That keeps the first sprint focused, measurable, and easy for your team to trust.
+            {t.bentoGrid.description}
           </motion.p>
         </div>
 
@@ -73,7 +57,9 @@ export default function BentoGrid() {
                     <item.icon className="h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-mono text-xs text-text-muted">Industry {item.id}</div>
+                    <div className="font-mono text-xs text-text-muted">
+                      {language === 'en' ? `Industry ${item.id}` : `مجال ${item.id}`}
+                    </div>
                     <div className="text-sm font-bold text-ink">{item.industry}</div>
                   </div>
                 </div>
@@ -101,3 +87,4 @@ export default function BentoGrid() {
     </section>
   );
 }
+

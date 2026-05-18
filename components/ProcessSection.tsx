@@ -1,31 +1,18 @@
 'use client';
 import { motion } from 'motion/react';
 import { FileSearch, Hammer, PlugZap, SlidersHorizontal } from 'lucide-react';
+import { useLanguage } from '@/lib/LanguageContext';
 
-const processSteps = [
-  {
-    title: 'Map the leak',
-    desc: 'We review lead sources, reply windows, calendar gaps, CRM fields, and team handoffs to find the first workflow worth automating.',
-    icon: FileSearch,
-  },
-  {
-    title: 'Build the system',
-    desc: 'We design the agent logic, qualification rules, routing paths, and edge-case guardrails around the way your team already sells.',
-    icon: Hammer,
-  },
-  {
-    title: 'Connect the stack',
-    desc: 'We wire the workflow into your CRM, inboxes, calendar, messaging tools, and internal alerts so the system changes real operations.',
-    icon: PlugZap,
-  },
-  {
-    title: 'Tune the floor',
-    desc: 'We watch the logs, refine prompts and routing, add coverage where demand appears, and keep the automation accountable.',
-    icon: SlidersHorizontal,
-  },
-];
+const stepIcons = [FileSearch, Hammer, PlugZap, SlidersHorizontal];
 
 export default function ProcessSection() {
+  const { language, t } = useLanguage();
+
+  const processSteps = t.process.steps.map((step, index) => ({
+    ...step,
+    icon: stepIcons[index],
+  }));
+
   return (
     <section id="process" className="w-full bg-bg-primary px-5 py-24 md:px-8 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
@@ -36,9 +23,9 @@ export default function ProcessSection() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <div className="mb-4 font-mono text-xs text-accent-primary">Process</div>
+          <div className="mb-4 font-mono text-xs text-accent-primary">{t.process.badge}</div>
           <h2 className="text-4xl font-bold leading-[1.05] text-ink md:text-6xl">
-            A build sprint with operational discipline.
+            {t.process.title}
           </h2>
         </motion.div>
 
@@ -50,7 +37,7 @@ export default function ProcessSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.55, delay: index * 0.08 }}
-              className="relative flex h-full flex-col border-b border-white/10 py-8 lg:border-b-0 lg:border-r lg:px-6"
+              className="relative flex h-full flex-col border-b border-white/10 py-8 lg:border-b-0 lg:border-e lg:px-6"
             >
               <div className="mb-8 flex items-center justify-between">
                 <span className="font-mono text-sm text-text-muted">0{index + 1}</span>
@@ -78,3 +65,4 @@ export default function ProcessSection() {
     </section>
   );
 }
+

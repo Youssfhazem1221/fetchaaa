@@ -1,31 +1,11 @@
 'use client';
 import { motion } from 'motion/react';
-
-const stats = [
-  {
-    market: 'E-commerce',
-    outcome: '953+ hours removed',
-    system: 'Automated order processing and email triage across 114k+ messages.',
-    result: 'Equivalent to 5.4 months of support labor recovered.',
-    score: '98',
-  },
-  {
-    market: 'SaaS',
-    outcome: '91% faster replies',
-    system: 'Tier-1 customer support agent across three languages with escalation logic.',
-    result: 'Global coverage without forcing the team into a new inbox.',
-    score: '95',
-  },
-  {
-    market: 'Clinics',
-    outcome: '3 weeks, zero no-shows',
-    system: 'WhatsApp intake, booking confirmation, reminder, and triage workflow.',
-    result: 'Cleaner schedules and fewer manual confirmation calls.',
-    score: '92',
-  },
-];
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function CaseStudies() {
+  const { language, t } = useLanguage();
+  const stats = t.caseStudies.stats;
+
   return (
     <section className="w-full bg-bg-primary px-5 py-24 md:px-8 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
@@ -37,13 +17,13 @@ export default function CaseStudies() {
           className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end"
         >
           <div>
-            <div className="mb-4 font-mono text-xs text-accent-primary">Measured outcomes</div>
+            <div className="mb-4 font-mono text-xs text-accent-primary">{t.caseStudies.badge}</div>
             <h2 className="text-4xl font-bold leading-[1.05] text-ink md:text-6xl">
-              Proof that reads like an ops report.
+              {t.caseStudies.title}
             </h2>
           </div>
-          <p className="max-w-2xl text-lg leading-8 text-text-muted lg:ml-auto">
-            The best automation work becomes boring in the right way: fewer delays, cleaner handoffs, and numbers your team can check.
+          <p className="max-w-2xl text-lg leading-8 text-text-muted lg:ms-auto">
+            {t.caseStudies.description}
           </p>
         </motion.div>
 
@@ -67,8 +47,8 @@ export default function CaseStudies() {
                 <p className="mt-2">{stat.result}</p>
               </div>
 
-              <div className="md:text-right">
-                <div className="font-mono text-xs text-text-muted">confidence score</div>
+              <div className="md:text-end">
+                <div className="font-mono text-xs text-text-muted">{t.caseStudies.confidence}</div>
                 <div className="mt-2 text-5xl font-bold text-accent-primary">{stat.score}%</div>
                 <div className="mt-3 h-2 rounded-[2px] bg-white/10">
                   <motion.div
@@ -87,3 +67,4 @@ export default function CaseStudies() {
     </section>
   );
 }
+

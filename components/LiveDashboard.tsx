@@ -19,7 +19,7 @@ export default function LiveDashboard() {
         transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      <div className="absolute right-[-160px] top-20 hidden w-[760px] rotate-[-8deg] md:block lg:right-[-60px]">
+      <div className="absolute end-[-160px] top-20 hidden w-[760px] rotate-[-8deg] rtl:rotate-[8deg] md:block lg:end-[-60px]">
         <motion.div
           className="grid grid-cols-[1.1fr_0.8fr] gap-4"
           initial={{ opacity: 0, y: 22 }}

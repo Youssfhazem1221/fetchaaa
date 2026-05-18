@@ -1,8 +1,10 @@
 'use client';
 import { motion } from 'motion/react';
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function InfiniteTicker() {
-  const text = 'AI OPERATIONS // DONE FOR YOU // 48H FIRST LAUNCH // MENA // EU // US MARKET COVERAGE // CRM SYNC // LEAD RESPONSE // HUMAN HANDOFFS // ';
+  const { t } = useLanguage();
+  const text = t.ticker.text;
   
   return (
     <div className="z-20 flex h-14 w-full items-center overflow-hidden border-b border-white/10 bg-paper text-bg-primary">
