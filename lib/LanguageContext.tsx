@@ -21,6 +21,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const savedLang = localStorage.getItem('fetch-lang') as Language;
     if (savedLang === 'en' || savedLang === 'ar') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLanguageState(savedLang);
     } else {
       // Auto-detect browser language if arabic

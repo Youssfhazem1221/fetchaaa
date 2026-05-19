@@ -55,14 +55,14 @@ export default function LivePerformance() {
       icon: flowIcons[i],
       tone: i === 0 ? 'text-accent-tertiary' : i === 1 ? 'text-accent-primary' : 'text-accent-secondary',
     }));
-  }, [t, language]);
+  }, [t]);
 
   const workflowNodes = useMemo(() => {
     return t.livePerformance.workflowNodes.map((node, i) => ({
       ...node,
       icon: workflowIcons[i],
     }));
-  }, [t, language]);
+  }, [t]);
 
   const diagramNodes = useMemo(() => {
     return t.livePerformance.diagramNodes.map((node, i) => ({
@@ -71,14 +71,14 @@ export default function LivePerformance() {
       tone: i === 0 ? 'text-accent-tertiary' : i === 1 ? 'text-accent-primary' : i === 2 ? 'text-accent-secondary' : i === 3 ? 'text-accent-primary' : 'text-accent-tertiary',
       border: i === 3 ? 'border-accent-primary/25' : 'border-white/18',
     }));
-  }, [t, language]);
+  }, [t]);
 
   const subNodes = useMemo(() => {
     return t.livePerformance.subNodes.map((n, i) => ({
       ...n,
       icon: subIcons[i],
     }));
-  }, [t, language]);
+  }, [t]);
 
   return (
     <section
