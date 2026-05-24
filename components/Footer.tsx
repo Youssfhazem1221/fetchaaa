@@ -21,8 +21,17 @@ export default function Footer() {
         <div className="grid gap-10 border-t border-white/10 pt-10 md:grid-cols-[1.2fr_0.8fr] md:items-start">
           <div>
             <div className="flex items-center gap-3">
-              <div className="h-3 w-3 rounded-sm bg-accent-primary shadow-[0_0_18px_rgba(183,255,42,0.45)]" />
-              <span className="text-2xl font-bold">FETCH</span>
+              <svg
+                className="h-8 w-auto text-accent-primary drop-shadow-[0_0_8px_rgba(183,255,42,0.25)]"
+                viewBox="0 0 1024 903"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="currentColor" stroke="#000000" strokeWidth="24" strokeLinejoin="round" strokeLinecap="round" d="M876 122H466c-92 0-145 54-159 129L145 742h112l98-285h176l44-111H396c12-68 36-113 81-113h355Z"/>
+                <path fill="currentColor" stroke="#000000" strokeWidth="24" strokeLinejoin="round" strokeLinecap="round" d="M620 346h88l172 396H759L635 457h-59Z"/>
+                <path fill="currentColor" stroke="#000000" strokeWidth="24" strokeLinejoin="round" strokeLinecap="round" d="M439 506h121l-46 120h188l-45 116H450c-40 0-62-32-62-79Z"/>
+              </svg>
+              <span className="text-2xl font-bold tracking-wider">FETCH</span>
             </div>
             <p className="mt-5 max-w-xl text-base leading-7 text-text-muted">
               {t.footer.description}

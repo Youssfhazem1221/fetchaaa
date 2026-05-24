@@ -32,12 +32,19 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-[72px] w-full max-w-[1280px] items-center justify-between px-5 md:px-8 lg:px-10">
         <a href="#" className="group relative flex min-w-0 items-center gap-3">
-          <motion.div
-            animate={{ opacity: [0.55, 1, 0.55] }}
-            transition={{ repeat: Infinity, duration: 2.4, ease: 'easeInOut' }}
-            className="h-3 w-3 rounded-sm bg-accent-primary shadow-[0_0_20px_rgba(183,255,42,0.45)]"
-          />
-          <span className="text-lg font-bold text-text-primary">FETCH</span>
+          <motion.svg
+            className="h-6 w-auto text-accent-primary drop-shadow-[0_0_8px_rgba(183,255,42,0.35)]"
+            viewBox="0 0 1024 903"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            animate={{ opacity: [0.85, 1, 0.85] }}
+            transition={{ repeat: Infinity, duration: 2.8, ease: 'easeInOut' }}
+          >
+            <path fill="currentColor" stroke="#000000" strokeWidth="24" strokeLinejoin="round" strokeLinecap="round" d="M876 122H466c-92 0-145 54-159 129L145 742h112l98-285h176l44-111H396c12-68 36-113 81-113h355Z"/>
+            <path fill="currentColor" stroke="#000000" strokeWidth="24" strokeLinejoin="round" strokeLinecap="round" d="M620 346h88l172 396H759L635 457h-59Z"/>
+            <path fill="currentColor" stroke="#000000" strokeWidth="24" strokeLinejoin="round" strokeLinecap="round" d="M439 506h121l-46 120h188l-45 116H450c-40 0-62-32-62-79Z"/>
+          </motion.svg>
+          <span className="text-lg font-bold text-text-primary tracking-wider">FETCH</span>
           <span className="hidden border-s border-white/15 ps-3 font-mono text-[11px] text-text-muted sm:inline">
             {language === 'en' ? 'AI operations systems' : 'أنظمة تشغيل العمليات بالذكاء الاصطناعي'}
           </span>

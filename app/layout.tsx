@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: 'Fetch | AI Operations Systems',
   description: 'Premium AI automation systems for intake, follow-up, scheduling, CRM updates, and team handoffs.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/logo.svg',
   },
 };
 
