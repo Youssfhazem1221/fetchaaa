@@ -27,28 +27,39 @@ export const translations = {
       text: 'AI OPERATIONS // CUSTOM CRM BUILDS // DONE FOR YOU // 48H FIRST LAUNCH // MENA // EU // US MARKETS // LEAD RESPONSE IN <60s // NO-SHOW RECOVERY // REVENUE AUTOMATION // ',
     },
     services: {
-      badge: 'What we build',
-      title: 'Stop losing money between your ads and your calendar.',
-      description:
-        'Every business has the same three leaks: leads that go cold before anyone replies, a CRM that nobody trusts, and a team drowning in manual tasks. Fetch closes all three. We build the AI systems, custom CRMs, and operations workflows that turn your current chaos into a machine that runs itself.',
+      badge: 'AI and automation hub',
+      title: 'Practical AI, clearly scoped.',
+      description: 'The market is full of broad AI claims. Fetch keeps the offer specific: what it does, where it connects and how it saves time.',
       items: [
         {
-          title: 'Lead response engine',
-          description:
-            'Every lead replied to in under 60 seconds — automatically. We capture inquiries from every channel, score their intent, and push only the hot ones to your team. No more "we meant to follow up."',
-          details: ['WhatsApp, email, forms', 'Intent scoring', 'Spam filtering'],
+          title: 'Lead qualification bot',
+          description: 'Qualify website visitors, collect requirements and route serious leads to WhatsApp or CRM.',
+          details: ['Visitor qualification', 'Requirement collection', 'CRM & WhatsApp routing'],
         },
         {
-          title: 'Custom CRM builds',
-          description:
-            'Your spreadsheet is not a CRM. We build you a proper custom CRM — pipeline stages, auto-updates, deal tracking, and follow-up sequences — fitted exactly to how your team sells.',
-          details: ['Pipeline & deal tracking', 'Auto-updates from AI', 'Follow-up sequences'],
+          title: 'WhatsApp-to-CRM workflow',
+          description: 'Capture inquiries, tag lead source, assign owners and trigger follow-up reminders.',
+          details: ['Inquiry capture', 'Lead tagging & assignment', 'Follow-up reminders'],
         },
         {
-          title: 'Full operations automation',
-          description:
-            'Connect every tool your team uses into one clean workflow. Bookings, reminders, CRM updates, escalations — all automatic. Your team focuses on closing, not chasing.',
-          details: ['CRM sync & updates', 'Calendar & bookings', 'Team handoffs'],
+          title: 'Knowledge-base assistant',
+          description: 'Answer customer or team questions from approved documents, FAQs and policies.',
+          details: ['Customer support', 'Internal knowledge base', 'Policy & FAQ queries'],
+        },
+        {
+          title: 'Quote automation',
+          description: 'Turn form inputs into structured briefs, estimates and internal task lists.',
+          details: ['Form-to-brief parsing', 'Estimate generation', 'Task list creation'],
+        },
+        {
+          title: 'Report summaries',
+          description: 'Summarize campaign, SEO and lead data into clear weekly or monthly action points.',
+          details: ['Campaign summaries', 'SEO & lead data parsing', 'Actionable reports'],
+        },
+        {
+          title: 'Support ticket triage',
+          description: 'Classify support requests, suggest replies and escalate urgent issues to ',
+          details: ['Request classification', 'Reply suggestions', 'Urgent escalation'],
         },
       ],
       cta: 'Scope this system',
@@ -335,6 +346,61 @@ export const translations = {
       message:
         "Hi Fetch team, I'd like to book a free audit for my business. I want to see what you can automate for us.",
     },
+    niches: {
+      badge: 'Niches',
+      title: 'Where we build.',
+      description: 'Focused digital systems for teams that need better customer journeys, cleaner operations and measurable growth.',
+      items: [
+        {
+          title: 'E-commerce & Retail',
+          description: 'Stores, catalogs, checkout flows and retention systems built for repeat sales.',
+        },
+        {
+          title: 'Restaurants & F&B',
+          description: 'Ordering journeys, local visibility and campaign systems for guest acquisition.',
+        },
+        {
+          title: 'Delivery & On-Demand',
+          description: 'Booking, dispatch and customer update flows for fast-moving operations.',
+        },
+        {
+          title: 'Logistics & Transport',
+          description: 'Portals, tracking, lead capture and workflow tools for service teams.',
+        },
+        {
+          title: 'B2B & Emerging Tech',
+          description: 'Clear product storytelling, proof-driven websites and technical content systems.',
+        },
+        {
+          title: 'Clinics & Healthcare',
+          description: 'Patient-friendly websites, booking flows and compliant lead management.',
+        },
+        {
+          title: 'Finance & Professional Services',
+          description: 'Credibility-led digital experiences for firms where trust drives conversion.',
+        },
+        {
+          title: 'Communities & Nonprofits',
+          description: 'Membership journeys, campaigns and content hubs that support participation.',
+        },
+        {
+          title: 'Real Estate & Construction',
+          description: 'Project showcases, inquiry routing and sales enablement for property teams.',
+        },
+        {
+          title: 'Education & Training',
+          description: 'Enrollment funnels, course platforms and learner communication workflows.',
+        },
+        {
+          title: 'Operations & IoT',
+          description: 'Dashboards, device data views and automation layers for operational teams.',
+        },
+        {
+          title: 'Startups & MVPs',
+          description: 'Lean product discovery, prototypes and launch systems for new ventures.',
+        },
+      ],
+    },
   },
   ar: {
     navbar: {
@@ -362,28 +428,39 @@ export const translations = {
       text: 'أتمتة ذكية // CRM مخصص لشركتك // رد في أقل من 60 ثانية // إطلاق في 48 ساعة // الشرق الأوسط وأوروبا وأمريكا // صفر غياب في المواعيد // استرجاع مبيعات ضائعة // بنعملهولك إنت // ',
     },
     services: {
-      badge: 'اللي بنبنيه لشركتك',
-      title: 'وقفنا نشوف الفلوس بتتسرب منين — وسدينا التسريب.',
-      description:
-        'كل شركة بتعاني من نفس المشاكل الثلاثة: عملاء بيستفسروا وما حدش بيرد في الوقت الصح، CRM ما حدش بيحدثه، وفريق بيضيع نصف يومه في تاسكات المفروض ماكينة تعملها. إحنا بنحل الثلاثة دول.',
+      badge: 'مركز الذكاء الاصطناعي والأتمتة',
+      title: 'ذكاء اصطناعي عملي، محدد النطاق بدقة.',
+      description: 'السوق مليء بالادعاءات الواسعة حول الذكاء الاصطناعي. Fetch يبقي العرض محددًا: ماذا يفعل، وأين يتصل، وكيف يوفر الوقت.',
       items: [
         {
-          title: 'نظام الرد الفوري على العملاء',
-          description:
-            'مفيش استفسار بيعدي من غير رد تاني. النظام بيلتقط كل رسالة من كل قناة، بيحلل جدية العميل، وبيرد في أقل من 60 ثانية. فريقك مش بيتكلم غير مع الجاد فعلاً.',
-          details: ['واتساب، إيميل، نماذج', 'تقييم جدية العميل', 'فلترة الرسائل المزعجة'],
+          title: 'بوت تأهيل العملاء المحتملين',
+          description: 'تأهيل زوار الموقع الإلكتروني، وجمع المتطلبات، وتوجيه العملاء الجادين إلى الواتساب أو نظام الـ CRM.',
+          details: ['تأهيل الزوار', 'جمع المتطلبات', 'توجيه للواتساب والـ CRM'],
         },
         {
-          title: 'CRM مخصص لشركتك',
-          description:
-            'الإكسيل مش CRM. بنبنيلك CRM بيتناسب مع طريقة مبيعاتك الفعلية — مراحل الديل، تتبع تلقائي، تسلسل متابعة، وتحديثات من الذكاء الاصطناعي من غير ما حد يلمسه.',
-          details: ['مراحل الديل والمتابعة', 'تحديثات تلقائية بالذكاء', 'تسلسل متابعة العملاء'],
+          title: 'مسار عمل الواتساب إلى الـ CRM',
+          description: 'التقاط الاستفسارات، وتحديد مصدر العميل، وتعيين المسؤولين وتفعيل تذكيرات المتابعة.',
+          details: ['التقاط الاستفسارات', 'تحديد وتعيين العملاء', 'تنبيهات المتابعة'],
         },
         {
-          title: 'أتمتة كاملة للعمليات',
-          description:
-            'ربط كل أدواتك في مسار واحد منظم. حجوزات، تذكيرات، تحديث الـ CRM، توجيه الفريق — كل ده بيتعمل أوتوماتيك. فريقك يركز على الإغلاق مش على المتابعة.',
-          details: ['مزامنة الـ CRM والحجوزات', 'تذكيرات وتنبيهات تلقائية', 'تسليم المهام للفريق'],
+          title: 'مساعد قاعدة المعرفة',
+          description: 'الإجابة على أسئلة العملاء أو الفريق من المستندات المعتمدة، والأسئلة الشائعة والسياسات.',
+          details: ['دعم العملاء', 'قاعدة معرفة داخلية', 'الأسئلة الشائعة والسياسات'],
+        },
+        {
+          title: 'أتمتة عروض الأسعار',
+          description: 'تحويل مدخلات النماذج إلى ملخصات مهيكلة، وتقديرات وقوائم مهام داخلية.',
+          details: ['تحليل النماذج لملخصات', 'توليد تقديرات الأسعار', 'إنشاء قوائم المهام'],
+        },
+        {
+          title: 'ملخصات التقارير',
+          description: 'تلخيص بيانات الحملات، وتحسين محركات البحث (SEO)، والعملاء المحتملين إلى نقاط عمل واضحة أسبوعياً أو شهرياً.',
+          details: ['ملخصات الحملات', 'تحليل الـ SEO والعملاء', 'تقارير قابلة للتنفيذ'],
+        },
+        {
+          title: 'فرز وتوجيه تذاكر الدعم',
+          description: 'تصنيف طلبات الدعم، واقتراح الردود، وتصعيد المشكلات العاجلة إلى ',
+          details: ['تصنيف طلبات الدعم', 'اقتراح ردود مناسبة', 'تصعيد الحالات العاجلة'],
         },
       ],
       cta: 'حدد تفاصيل نظامك',
@@ -663,6 +740,61 @@ export const translations = {
       badge: 'متاحين دلوقتي',
       label: 'كلمنا على واتساب',
       message: 'أهلاً بفريق Fetch، عايز أحجز فحص مجاني لشركتي وأشوف إيه اللي تقدروا تأتمتوه لينا.',
+    },
+    niches: {
+      badge: 'القطاعات',
+      title: 'أين نبني ونمكّن.',
+      description: 'أنظمة رقمية متخصصة للفرق التي تحتاج إلى رحلات عملاء أفضل، عمليات أنظف، ونمو ملموس.',
+      items: [
+        {
+          title: 'التجارة الإلكترونية والتجزئة',
+          description: 'متاجر، كتالوجات، مسارات دفع، وأنظمة احتفاظ بالعملاء مصممة لتكرار المبيعات.',
+        },
+        {
+          title: 'المطاعم والأغذية والمشروبات',
+          description: 'مسارات الطلب، الظهور المحلي، وأنظمة الحملات لجذب الضيوف والزبائن.',
+        },
+        {
+          title: 'التوصيل والطلب الفوري',
+          description: 'تدفقات الحجز، الإرسال، وتحديثات العملاء للعمليات سريعة الحركة.',
+        },
+        {
+          title: 'الخدمات اللوجستية والنقل',
+          description: 'بوابات، تتبع، التقاط العملاء المحتملين، وأدوات سير العمل لفرق الخدمة.',
+        },
+        {
+          title: 'الشركات التجارية والتكنولوجيا الناشئة',
+          description: 'سرد قصصي واضح للمنتجات، مواقع مبنية على الإثباتات، وأنظمة محتوى تقني.',
+        },
+        {
+          title: 'العيادات والرعاية الصحية',
+          description: 'مواقع صديقة للمرضى، مسارات حجز، وإدارة متوافقة للعملاء المحتملين.',
+        },
+        {
+          title: 'الخدمات المالية والمهنية',
+          description: 'تجارب رقمية قائمة على المصداقية للشركات حيث تدفع الثقة عملية التحويل.',
+        },
+        {
+          title: 'المجتمعات والمنظمات غير الربحية',
+          description: 'مسارات العضوية، الحملات، ومراكز المحتوى التي تدعم المشاركة.',
+        },
+        {
+          title: 'العقارات والإنشاءات',
+          description: 'استعراض المشاريع، توجيه الاستفسارات، وتمكين المبيعات لفرق العقارات.',
+        },
+        {
+          title: 'التعليم والتدريب',
+          description: 'أقماع التسجيل، منصات الدورات، ومسارات عمل التواصل مع المتعلمين.',
+        },
+        {
+          title: 'العمليات وإنترنت الأشياء (IoT)',
+          description: 'لوحات التحكم، مشاهدات بيانات الأجهزة، وطبقات الأتمتة لفرق العمليات.',
+        },
+        {
+          title: 'الشركات الناشئة والمشاريع التجريبية (MVPs)',
+          description: 'اكتشاف المنتجات الرشيقة، النماذج الأولية، وأنظمة الإطلاق للمشاريع الجديدة.',
+        },
+      ],
     },
   },
 };

@@ -23,8 +23,8 @@ export default function ProcessSection() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <div className="mb-4 font-mono text-xs text-accent-primary">{t.process.badge}</div>
-          <h2 className="text-4xl font-bold leading-[1.05] text-ink md:text-6xl">
+          <div className="mb-4 font-mono text-xs uppercase tracking-wider text-accent-primary">{t.process.badge}</div>
+          <h2 className="text-4xl font-bold leading-[1.1] text-ink md:text-5xl lg:text-6xl">
             {t.process.title}
           </h2>
         </motion.div>

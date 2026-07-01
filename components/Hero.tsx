@@ -15,13 +15,15 @@ export default function Hero() {
   }));
 
   return (
-    <section className="relative isolate flex min-h-[86svh] w-full items-end overflow-hidden border-b border-white/10 bg-bg-primary px-5 pb-10 pt-28 md:px-8 md:pt-32 lg:px-10">
+    <section className="relative isolate flex min-h-[86svh] w-full items-end border-b border-white/10 bg-bg-primary px-5 pb-10 pt-28 md:px-8 md:pt-32 lg:px-10">
       <LiveDashboard />
 
       <div className="relative z-10 mx-auto w-full max-w-[1280px]">
         <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="max-w-4xl animate-fade-in-up"
+          className="max-w-4xl"
         >
           <div className="mb-5 inline-flex items-center gap-3 border-s-2 border-accent-primary bg-paper/10 px-3 py-2 font-mono text-xs text-accent-primary backdrop-blur">
             {t.hero.badge}
@@ -29,8 +31,8 @@ export default function Hero() {
 
           <h1 className={`max-w-4xl font-bold text-ink ${
             language === 'ar' 
-              ? 'text-4xl leading-[1.15] md:text-6xl lg:text-7xl' 
-              : 'text-5xl leading-[0.96] md:text-7xl lg:text-8xl'
+              ? 'text-4xl leading-[1.15] md:text-5xl lg:text-6xl' 
+              : 'text-5xl leading-[0.96] md:text-6xl lg:text-7xl'
           }`}>
             {language === 'ar' ? (
               <>
@@ -42,7 +44,7 @@ export default function Hero() {
             )}
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-text-muted md:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-8 text-text-muted md:text-lg">
             {t.hero.description}
           </p>
 
@@ -64,6 +66,8 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.22, ease: 'easeOut' }}
           className="mt-10 grid max-w-3xl grid-cols-1 border-y border-white/10 bg-bg-primary/70 backdrop-blur sm:grid-cols-3"
         >

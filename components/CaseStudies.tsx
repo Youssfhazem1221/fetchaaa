@@ -7,27 +7,25 @@ export default function CaseStudies() {
   const stats = t.caseStudies.stats;
 
   return (
-    <section className="w-full bg-bg-primary px-5 py-24 md:px-8 lg:px-10">
+    <section className="w-full bg-bg-primary px-5 py-20 md:px-8 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
         <motion.div
           initial={{ opacity: 0, y: 22 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
-          className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end"
+          className="max-w-3xl"
         >
-          <div>
-            <div className="mb-4 font-mono text-xs text-accent-primary">{t.caseStudies.badge}</div>
-            <h2 className="text-4xl font-bold leading-[1.05] text-ink md:text-6xl">
-              {t.caseStudies.title}
-            </h2>
-          </div>
-          <p className="max-w-2xl text-lg leading-8 text-text-muted lg:ms-auto">
+          <div className="mb-4 font-mono text-xs uppercase tracking-wider text-accent-primary">{t.caseStudies.badge}</div>
+          <h2 className="text-4xl font-bold leading-[1.1] text-ink md:text-5xl lg:text-6xl">
+            {t.caseStudies.title}
+          </h2>
+          <p className="mt-5 text-base md:text-lg leading-7 text-text-muted">
             {t.caseStudies.description}
           </p>
         </motion.div>
 
-        <div className="mt-14 overflow-hidden rounded-md border border-white/10">
+        <div className="mt-12 overflow-hidden rounded-md border border-white/10">
           {stats.map((stat, index) => (
             <motion.article
               key={stat.market}

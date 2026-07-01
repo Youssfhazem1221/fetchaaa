@@ -4,8 +4,8 @@ import ServicesSection from '@/components/ServicesSection';
 import LivePerformance from '@/components/LivePerformance';
 import ProcessSection from '@/components/ProcessSection';
 import BentoGrid from '@/components/BentoGrid';
+import Niches from '@/components/Niches';
 import CaseStudies from '@/components/CaseStudies';
-import AboutUs from '@/components/AboutUs';
 import FAQ from '@/components/FAQ';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
@@ -19,8 +19,8 @@ export default function Home() {
       <LivePerformance />
       <ProcessSection />
       <BentoGrid />
+      <Niches />
       <CaseStudies />
-      <AboutUs />
       <FAQ />
       <ContactForm />
       <Footer />

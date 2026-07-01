@@ -77,9 +77,9 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="contact" className="w-full bg-paper px-5 py-24 text-bg-primary md:px-8 lg:px-10">
+    <section id="contact" className="w-full bg-paper px-5 py-16 text-bg-primary md:px-8 lg:px-10">
       <div className="mx-auto max-w-[1280px]">
-        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+        <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -90,13 +90,13 @@ export default function ContactForm() {
             <h2 className="text-4xl font-bold leading-[1.05] md:text-6xl rtl:text-3xl rtl:md:text-5xl">
               {t.contact.title}
             </h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-bg-primary/70">
+            <p className="mt-4 max-w-xl text-base leading-7 text-bg-primary/70">
               {t.contact.description}
             </p>
 
-            <div className="mt-10 grid gap-3">
+            <div className="mt-6 grid gap-2">
               {auditOutputs.map((item) => (
-                <div key={item.label} className="flex items-center gap-3 border-t border-bg-primary/15 pt-4">
+                <div key={item.label} className="flex items-center gap-3 border-t border-bg-primary/15 pt-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-md bg-bg-primary text-accent-primary">
                     <item.icon className="h-5 w-5" />
                   </div>

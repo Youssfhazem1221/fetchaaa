@@ -1,9 +1,16 @@
 'use client';
 import { motion } from 'motion/react';
-import { ArrowRight, Bot, CalendarCheck, Network, Radar, ShieldCheck, Workflow } from 'lucide-react';
+import { ArrowRight, Bot, CalendarCheck, Network, Radar, ShieldCheck, Workflow, BookOpen, Calculator, BarChart3, Inbox } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 
-const serviceIcons = [Radar, CalendarCheck, Workflow];
+const serviceIcons = [
+  Bot,            // Lead qualification bot
+  Workflow,       // WhatsApp-to-CRM workflow
+  BookOpen,       // Knowledge-base assistant
+  Calculator,     // Quote automation
+  BarChart3,      // Report summaries
+  Inbox,          // Support ticket triage
+];
 const capabilityIcons = [Bot, Network, ShieldCheck];
 
 export default function ServicesSection() {
@@ -11,7 +18,7 @@ export default function ServicesSection() {
 
   const services = t.services.items.map((item, index) => ({
     ...item,
-    icon: serviceIcons[index],
+    icon: serviceIcons[index] || Radar,
   }));
 
   const capabilities = t.services.capabilities.map((label, index) => ({
